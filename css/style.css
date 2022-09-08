@@ -1,0 +1,105 @@
+/**********Primary************/
+/********Neutral*************/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(233deg, 47%, 7%);
+  font-family: "Inter", "sans-serif";
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+}
+.container header img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 0 10px 10px 0;
+  filter: opacity(0.4) drop-shadow(0 0 0 hsl(277deg, 64%, 61%));
+}
+.container main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  justify-content: space-around;
+  height: 450px;
+  border-radius: 10px 0 0 10px;
+  background-color: hsl(244deg, 38%, 16%);
+}
+.container main h1 {
+  font-weight: 700;
+  color: white;
+}
+.container main h1 .highlight {
+  color: hsl(277deg, 64%, 61%);
+}
+.container main .paragraph {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+.container .stats-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.container .stats-container .stats {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  text-transform: uppercase;
+}
+.container .stats-container .stats .stats-number {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+.attribution a {
+  color: hsl(277deg, 64%, 61%);
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container header img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+  }
+  .container main {
+    padding: 10px 20px;
+    height: 400px;
+    width: 300px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+  }
+  .container .stats-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
